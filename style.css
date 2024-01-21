@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: whitesmoke;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+}
+
+.bubbles span {
+    position: relative;
+    min-width: 30px;
+    height: 30px;
+    background-color: #ff671f;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #ff671f44,
+        0 0 50px #ff671f,
+        0 0 100px #ff671f;
+    margin: 0 4px;
+    animation: animate 1s ease-in-out infinite;
+
+    animation-duration: calc(75s / var(--i));
+    z-index: 1;
+}
+
+.bubbles span:nth-child(even) {
+    margin: 0 4px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #ff671f44,
+        0 0 25px #ff671f,
+        0 0 50px #ff671f;
+    z-index: 0;
+    background-color: white;
+}
+
+.img {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.ramji {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: url("download-shree-bhagwan-ram-wallpaper-free-sajw-1680188803.jpg") no-repeat center;
+    background-size: 400px 450px;
+    animation: photoch 10s ease-in-out infinite alternate;
+    filter: drop-shadow(0 0 100px #ff671f);
+}
+
+
+@keyframes photoch {
+    0% {
+        background: url(peakpx.jpg) no-repeat center fixed;
+        background-size: 400px 450px;
+        transform: scale(1.1);
+    }
+
+    10% {
+        background: url(god-sri-ram-images-hd-online-1080p-download-pcbp-1680286506.jpg) no-repeat center fixed;
+        background-size: 400px 450px;
+        transform: scale(1);
+    }
+
+    20% {
+        background: url(hindu-god-angry-rama-3d-image-pic-wallpaper-download-usna-1680286557\ \(1\).jpg) no-repeat center fixed;
+        background-size: 400px 450px;
+        transform: scale(1.1);
+    }
+
+    30% {
+        background: url(lord-rama-god-rama-bhagwan-ram-hd-image-pic-for-phone-mobile-wallpaper-ufoa-1680189562.jpg) no-repeat center fixed;
+        background-size: 400px 450px;
+        transform: scale(1);
+    }
+
+    40% {
+        background: url(lord-rama-with-great-devotee-hanuman-ji-hd-wallpapers-download-free-rjtq-1680286507\ \(1\).jpg) no-repeat center fixed;
+        background-size: 400px 450px;
+        transform: scale(1.1);
+    }
+
+    50% {
+        background: url(shree-ram-dhanush-baan-bhagwan-ram-image-download-pic-hd-copy-gpto-1680188803.jpg) no-repeat center;
+        background-size: 400px 450px;
+        transform: scale(1);
+    }
+
+    60% {
+        background: url(shri-ram-photo-png.png) no-repeat center;
+        background-size: 400px 450px;
+        transform: scale(1.1);
+    }
+
+    70% {
+        background: url(ram-bhagwan-png.png) no-repeat center;
+        background-size: 400px 450px;
+        transform: scale(1);
+    }
+
+    80% {
+        background: url(god-ram-png.png) no-repeat center;
+        background-size: 400px 450px;
+        transform: scale(1.1);
+
+    }
+
+    90% {
+        background: url(download-shree-bhagwan-ram-wallpaper-free-sajw-1680188803.jpg) no-repeat center;
+        background-size: 400px 450px;
+        transform: scale(1);
+    }
+
+    100% {
+        background: url(god-ram-sita-png.png) no-repeat center;
+        background-size: 400px 450px;
+        transform: scale(1.1);
+    }
+
+}
+
+.content {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.content h1 {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    display: flex;
+    gap: 20px;
+}
+
+.content h1 span {
+    text-shadow: 0 0 10px #ff000044,
+        0 0 50px #ff0000,
+        0 0 100px #ff0000;
+    animation: colorc 2s linear infinite alternate;
+}
+
+.content h1 span:nth-child(even) {
+    animation-delay: 1s;
+}
+
+@keyframes colorc {
+    0% {
+        color: #ff0000;
+        transform: scale(1);
+        text-shadow: 0 0 10px #ff671f44,
+            0 0 50px #ff671f,
+            0 0 100px #ff671f;
+    }
+
+    100% {
+        color: #ff671f;
+        transform: scale(1.2);
+        text-shadow: 0 0 10px #ff000044,
+            0 0 50px #ff0000,
+            0 0 100px #ff0000;
+    }
+}
